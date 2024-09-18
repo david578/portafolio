@@ -99,7 +99,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: rgb(253, 253, 253);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -117,6 +117,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  color: black;
 }
 
 h1, .h1 {
@@ -641,9 +642,11 @@ progress {
   margin-left: auto;
 }
 
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
+
   }
 }
 @media (min-width: 768px) {
@@ -786,6 +789,13 @@ progress {
 .col-12 {
   flex: 0 0 auto;
   width: 100%;
+}
+.py-5{
+ 
+   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+
+
+
 }
 
 .offset-1 {
