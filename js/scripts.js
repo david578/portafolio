@@ -5,6 +5,7 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+// Animacion zomm
 document.addEventListener("DOMContentLoaded", function() {
     const cards = document.querySelectorAll('.card');
 
@@ -13,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Animacion zomm
+
+// texto escrito "desarrollador web"
 document.addEventListener("DOMContentLoaded", function () {
     const texto = "Desarrollador web"; // El texto que deseas mostrar
     const contenedor = document.getElementById("texto-dinamico");
@@ -26,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         contenedor.appendChild(cursor); // Agrega el cursor al contenedor
 
         function escribir() {
-            console.log("Escribiendo texto...");
+            
             if (i < texto.length) {
                 contenedor.textContent += texto.charAt(i); // Agrega un carácter al contenedor
                 i++;
@@ -45,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     escribirTexto(); // Inicia la función
 });
+// texto escrito "desarrollador web"
 
 // funcion descarga
 
@@ -58,6 +63,39 @@ function downloadPDF() {
         jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' } // Tamaño y orientación de la página
     });
 }
+// funcion descarga
 
 
+// funcion barra
+// Espera a que el DOM esté completamente cargado
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
+    // Detecta la sección en vista
+    window.addEventListener("scroll", function () {
+        let currentSection = "";
+
+        // Itera a través de las secciones para ver cuál está en el viewport
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            // Comprueba si la sección actual está en el viewport
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute("id");
+            }
+        });
+
+        // Remueve la clase "active" de todos los enlaces y la añade solo al enlace de la sección en vista
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${currentSection}`) {
+                link.classList.add("active");
+            }
+        });
+    });
+});
+
+
+// funcion barra
