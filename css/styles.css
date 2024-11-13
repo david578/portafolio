@@ -2,15 +2,23 @@ body {
     background-color: #09040c; /* Color de fondo general */
 }
 /* yo seccion */
-header {
-    /* background: rgba(151, 156, 196, 0.589); */
-    /* background: linear-gradient(171deg, rgba(36,227,225,1) 0%, rgba(150,159,106,1) 17%, rgba(185,214,52,1) 28%); */
+.barra_navegacion {
+    background: rgb(108,215,205);
+    background: linear-gradient(180deg, rgba(108,215,205,1) 0%, rgba(230,230,230,1) 100%, rgba(247,249,251,1) 100%);
+    
 }
 .yo{
     background: rgb(108,145,215);
     background: linear-gradient(180deg, rgba(108,145,215,1) 15%, rgba(230,230,230,1) 100%, rgba(52,120,214,1) 100%);
 }
 /* yo seccion */
+
+/* proyecto_seccion */
+.proyecto{
+    background: rgb(108,215,205);
+    background: linear-gradient(180deg, rgb(219, 236, 235) 0%, rgba(230,230,230,1) 100%, rgba(247,249,251,1) 100%);
+
+}
 .img-fluid {
     transition: transform 0.3s ease-in-out;
 }
