@@ -5,7 +5,7 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
-// Animacion zomm
+//inicio animacion zomm
 document.addEventListener("DOMContentLoaded", function() {
     const cards = document.querySelectorAll('.card');
 
@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Animacion zomm
+// fin animacion zomm
 
-// texto escrito "desarrollador web"
+// inico funcion texto escrito "desarrollador web"
 document.addEventListener("DOMContentLoaded", function () {
     const texto = "Desarrollador web"; // El texto que deseas mostrar
     const contenedor = document.getElementById("texto-dinamico");
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (i < texto.length) {
                 contenedor.textContent += texto.charAt(i); // Agrega un carácter al contenedor
                 i++;
-                setTimeout(escribir, 150); // Tiempo entre cada carácter (150 ms)
+                setTimeout(escribir, 150); // Tiempo entre cada carácter
             } else {
                 // Cuando termina de escribir, reinicia después de un breve retraso
                 setTimeout(function () {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     escribirTexto(); // Inicia la función
 });
-// texto escrito "desarrollador web"
+//fin funcion texto escrito "desarrollador web"
 
 // funcion descarga
 
@@ -63,7 +63,7 @@ function downloadPDF() {
         jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' } // Tamaño y orientación de la página
     });
 }
-// funcion descarga
+// fin funcion descarga
 
 
 // funcion barra
@@ -98,4 +98,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// funcion barra
+//fin  funcion barra
